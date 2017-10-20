@@ -109,8 +109,8 @@ def depthFirstSearch(problem):
                 if isin == False:
                     direction = action[1]
                     temp_actions = moves + direction.split()
-                    new_element = (action[0], temp_actions, action[2])
-                    s.push(new_element)
+                    e = (action[0], temp_actions, action[2])
+                    s.push(e)
 
     return moves
 
@@ -150,8 +150,8 @@ def breadthFirstSearch(problem):
 
                     temp_actions = moves + direction.split()  # split -- converts str to list
 
-                    new_element = (action[0], temp_actions, action[2])
-                    q.push(new_element)
+                    e = (action[0], temp_actions, action[2])
+                    q.push(e)
 
     return moves
 
